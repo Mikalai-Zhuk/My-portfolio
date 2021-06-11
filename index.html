@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <style>
+        html,
+        body,
+        p,
+        h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        p,
+        li {
+            font-family: 'Odibee Sans', cursive;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-top: 0;
+        }
+
+        .bold-text {
+            font-weight: bold;
+        }
+
+
+        .ryan-text {
+            color: rgb(109, 220, 253);
+
+        }
+
+
+        .purple {
+            background: #2775b4c7;
+        }
+
+        .white-text {
+            color: white;
+        }
+
+        .block1 {
+            width: 747px;
+            margin: auto;
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .block1 p {
+            line-height: 24px;
+        }
+
+        .loz {
+            background-image: url(./линии_DoV\ \(25\).png);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .block2 {
+            width: 640px;
+            margin: auto;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            align-items: baseline;
+            letter-spacing: 1px;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 2px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .nav li a {
+            text-decoration: none;
+            color: rgb(109, 220, 253);
+        }
+
+        .exp {
+            list-style: none;
+            color: #3f4950e0;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .exp li {
+            margin: 10px 0;
+        }
+
+        .achievements {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            /* list-style-image: url(./gratis2.png); */
+        }
+
+        .achievements li {
+            background: url(./gratis2.png) no-repeat left center;
+            padding-left: 25px;
+            margin: 20px 0;
+            /* margin: 10px -10px; */
+        }
+
+        .str-point {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            column-count: 2;
+            /* list-style-image: url(./unnamed\ 2.jpg); */
+        }
+
+        .str-point li {
+            background: url(./unnamed\ 2.jpg) no-repeat left center;
+            padding-left: 40px;
+            margin: 25px 0;
+            margin-top: 0;
+        }
+
+        .line img {
+            display: inline-block;
+            width: 200px;
+            height: 150px;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        .name-tag {
+            font-size: 25px;
+        }
+
+        .paragraph {
+            margin: 15px 5px;
+            font-size: 18px;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            padding: 15px 10px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            font-weight: bold;
+            width: 725px;
+            outline: none;
+            border: none;
+            border: 2px solid rgb(109, 220, 253);
+        }
+
+        input#submit {
+            width: 250px;
+            cursor: pointer;
+            background: rgb(109, 220, 253);
+            color: rgb(66, 48, 48);
+            font-size: 20px;
+
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        #gototop {
+            text-decoration: none;
+            display: inline-block;
+            width: 57px;
+            height: 37px;
+            background: rgb(109, 220, 253);
+            color: rgb(66, 48, 48);
+            font-size: 50px;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 35px;
+            right: 230px;
+
+            
+        }
+
+        .logo-container {
+            width: 747px;
+            height: 748px;
+            background-image: url(./img.png);
+            background-size: cover;
+            box-shadow: 0px -120px 150px 0px rgba(0, 0, 0, 0.8) inset;
+        }
+
+        .text-overlap {
+            position: relative;
+            padding: 0 60px;
+            top: -90px;
+            margin: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="purple">
+            <div class="block1" id="navigation">
+                <ul class="ryan-text nav">
+                    <li><span class="bold-text ryan-text name-tag">Николай Жук</span></li>
+                    <li><a href="#experience"> Опыт работы </a></li>
+                    <li><a href="#achievements">Достижения </a></li>
+                    <li><a href="#strong"> Сильные стороны </a></li>
+                    <li><a href="#deviz"> Лозунги </a></li>
+                    <li><a href="#private"> Личное </a></li>
+                    <li><a href="#contact"> Контакт </a></li>
+                </ul>
+                <!-- <img src="img.png" alt="Portret"> -->
+                <div class="logo-container"></div>
+
+                <p class="white-text paragraph text-overlap">
+                    Закончил Брестский техничсеский универститет по специальности <b>"Промышленное и гражданское
+                        строительство".</b>
+                    Интересна сфера IT для дальнейшей работы, т.к. вижу ее перспективность.
+                </p>
+                <h1 class="white-text">Инженер-строитель</h1>
+            </div>
+        </div>
+        <div class="block1" id="experience">
+            <h2>Опыт работы</h2>
+            <ol class="exp">
+                <li>
+                    <span class="bold-text">март 2017 - апрель 2017 </span>- "Стройтрест #8"
+                </li>
+                <li>
+                    <span class="bold-text">август 2018 - сентябрь 2018 </span>- "Брестжилстрой"
+                </li>
+                <li>
+                    <span class="bold-text">август 2019 - сентябрь 2019 </span>- "Брестжилстрой"
+                </li>
+                <li>
+                    <span class="bold-text">август 2020 - по н.в. </span>- "Полесьежилстрой"
+                </li>
+            </ol>
+        </div>
+        <div class="block1" id="achievements">
+            <h2>Мои достижения</h2>
+            <p class="bold-text"> Главные профдостижения </p>
+            <ul class="achievements">
+                <li> Диплом за хорошую работу в организации </li>
+                <li> Диплом после окончания университета </li>
+                <li> Диплом за спортивные достижения </li>
+            </ul>
+        </div>
+        <div class="block1" id="strong">
+            <h2>Мои сильные стороны</h2>
+            <ul class="str-point">
+                <li> Ловкость </li>
+                <li> Ответственность </li>
+                <li> Быстро учусь </li>
+            </ul>
+        </div>
+        <div class="loz">
+            <div class="block1" id="deviz">
+                <h2>Лозунги</h2>
+                <p> Не сходи с ума! </p>
+            </div>
+        </div>
+        <div class="block1" id="private">
+            <h2>Обо мне</h2>
+            <p>
+                Исходя из современной ситуации в мире относительно закоренившихся работ, типо строительства, хочу
+                перейти на
+                другой уровень работы, который в данный момент больше ценится.
+            </p>
+            <div class="line">
+                <img src="./iz-monitora-krasnogo-noutbuka-vyletayut-knigi.jpg" alt="Picture 2">
+                <img src="./c8cfbb366127ae46926e3c3fe9097c06.jpg" alt="Picture 1">
+                <img src="./online-education-biz.jpg" alt="Picture 3">
+            </div>
+        </div>
+
+        <div class="block1" id="contact">
+            <h2>Контакт</h2>
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="FIO" placeholder="Ф.И.О.">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Отправить">
+            </form>
+            
+                <a id="gototop" href="#navigation" >^</a>
+            
+        </div>
+    </div>
+</body>
+
+</html>
